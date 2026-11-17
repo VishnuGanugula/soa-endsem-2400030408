@@ -26,7 +26,7 @@ services:
     image: vishnuganugula/docker-endexam-2400030408:latest
     build:
       context: ./InteriorDesignProject
-      dockerfile: Dockerfile
+      dockerfile: backend.Dockerfile
     container_name: exam-service
     ports:
       - "2007:4081"
@@ -43,3 +43,6 @@ volumes:
 networks:
   microservices-network:
     driver: bridge
+
+
+    
